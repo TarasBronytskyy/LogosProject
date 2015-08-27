@@ -7,6 +7,7 @@ public class Main {
 		super();
 		this.age = age;
 		this.name = name;
+		
 	}
 	public int getAge() {
 		return age;
