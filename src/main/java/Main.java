@@ -3,11 +3,19 @@ public class Main {
 
 	private int age;
 	private String name;
-	public Main(int age, String name) {
+	private String surname;
+	public Main(int age, String name, String surname) {
 		super();
 		this.age = age;
 		this.name = name;
+		this.surname = surname;
 		
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
 	}
 	public int getAge() {
 		return age;
