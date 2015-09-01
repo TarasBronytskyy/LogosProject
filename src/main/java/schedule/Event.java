@@ -7,5 +7,6 @@ public class Event {
 	private int startTime;
 	private int endTime;
 	private String[] participants;
+	
 
 }
