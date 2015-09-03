@@ -1,7 +1,7 @@
 package DAO;
 
 public class Employee {
-
+	private int employeeId;
 	private String name;
 	private int age;
 	private String gender;
@@ -9,12 +9,13 @@ public class Employee {
 	private String password;
 
 
-	public Employee(String name, int age, String gender, String login, String password) {
+	public Employee( int employeeId, String name, int age, String gender, String login, String password) {
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 		this.login = login;
 		this.password = password;
+		this.employeeId = employeeId;
 	}
 
 
@@ -65,6 +66,16 @@ public class Employee {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
 
 	
