@@ -1,11 +1,29 @@
 package DAO;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Employee {
+	
+	@Id
+	@Column(name = "id")
 	private int employeeId;
+	
+	@Column(name = "name")
 	private String name;
+	
+	@Column(name = "age")
 	private int age;
+	
+	@Column(name = "gender")
 	private String gender;
+	
+	@Column(name = "login")
 	private String login;
+	
+	@Column(name = "password")
 	private String password;
 
 
@@ -76,6 +94,13 @@ public class Employee {
 
 	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", name=" + name + ", age=" + age + ", gender=" + gender
+				+ ", login=" + login + ", password=" + password + "]";
 	}
 
 	
