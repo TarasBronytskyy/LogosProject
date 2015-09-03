@@ -12,8 +12,14 @@ public class EmloyeeDAOImpl implements EmployeeDAO{
 		employees = new ArrayList<Employee>();
 		Employee employee1 = new Employee(1,"Taras", 21, "male", "taras", "123456");
 		Employee employee2 = new Employee(2,"Petro", 35, "male", "petro", "654321");
+		Employee employee3 = new Employee(3,"45", 35, "male", "petro", "654321");
+		Employee employee4 = new Employee(4,"85", 35, "male", "petro", "654321");
+		Employee employee5 = new Employee(5,"777", 35, "male", "petro", "654321");
 		employees.add(employee1);
 		employees.add(employee2);
+		employees.add(employee3);
+		employees.add(employee4);
+		employees.add(employee5);
 	}
 	//retrieve list of employees from database
 	public List<Employee> getAllEmployes() {
